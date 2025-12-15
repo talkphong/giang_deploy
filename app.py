@@ -1,5 +1,5 @@
 #pip install flask paho-mqtt flask_socketio firebase_admin
-
+import json
 import firebase_admin
 from firebase_admin import credentials, db
 
@@ -14,7 +14,6 @@ import os
 from flask import Flask, render_template, request, session, redirect
 from flask_socketio import SocketIO
 import paho.mqtt.client as mqtt #pip install paho-mqtt
-import json
 from functools import wraps
 
 
