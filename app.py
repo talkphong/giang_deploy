@@ -1,5 +1,5 @@
 #pip install flask paho-mqtt flask_socketio firebase_admin
-import json
+import json, os
 import firebase_admin
 from firebase_admin import credentials, db
 
@@ -10,7 +10,6 @@ firebase_admin.initialize_app(cred, {
     "databaseURL": "https://etone1-1b551-default-rtdb.asia-southeast1.firebasedatabase.app/" 
 })
 ###############################################################
-import os
 from flask import Flask, render_template, request, session, redirect
 from flask_socketio import SocketIO
 import paho.mqtt.client as mqtt #pip install paho-mqtt
